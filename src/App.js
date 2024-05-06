@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import Footer from "./components/Footer";
+import HomepageBackground from "./components/HomepageBackground";
+import "./index.css";
+import HomepageContent from "./components/HomepageContent";
+import ResponsiveMid from "./components/ResponsiveMid";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<React.Fragment className="relative w-screen">
+			<div className="App w-[100%]  overflow-x-hidden   z-50 text-2xl grid justify-center items-start justify-items-center  xs:hidden hidden lg:block ">
+				<HomepageContent />
+				<HomepageBackground />
+
+				<Footer />
+			</div>
+			<div className="Mid-screensize  w-[100%]  overflow-x-hidden  z-50  grid justify-center items-start justify-items-center visible lg:hidden absolute">
+				<ResponsiveMid />
+			</div>
+		</React.Fragment>
+	);
 }
 
 export default App;

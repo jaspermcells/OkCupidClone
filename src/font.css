@@ -1,0 +1,9 @@
+/* fonts.css */
+@font-face {
+	font-family: "Okcupid";
+	src: url("./fonts/SansSerifShaded.ttf") format("truetype"),
+		url("./fonts/SansSerifShaded.woff") format("woff"),
+		url("./fonts/SansSerifShaded.woff2") format("woff2");
+
+	/* Include font-weight and font-style if needed */
+}
